@@ -1,0 +1,257 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold; ;
+    font-size: 10px;
+
+    display: grid;
+    grid-template: 125px repeat(4, 1fr) / repeat(6, 1fr);
+
+    position: relative;
+    overflow: hidden;
+}
+
+.background{
+    position: absolute;
+    max-width: 111%;
+    max-height: 111%;
+    z-index: -1;
+}
+
+.header{
+    position: relative;
+    overflow: hidden;
+    grid-column-start: 1;
+    grid-column-end: 8;
+    margin-top: 10px;
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-bottom: 2%;
+    border-radius: 10px;
+
+    opacity: 0;
+    animation: headerIn 1.5s ease forwards;
+}
+
+@keyframes headerIn {
+    0% {
+        opacity: 0;
+        margin-left: 40%;
+        margin-right: 40%;
+        margin-bottom: 2%;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+.header {
+    animation-delay: 0.2s;
+}
+
+.header img{
+    position: absolute;
+    max-width: 100%;
+    z-index: 1;
+}
+
+.headerimage{
+    top: 50%;
+    transform: translateY(-50%);
+    filter: blur(0.5px);
+}
+
+.logo{
+    position: absolute;
+    max-width: 150%;
+    max-height: 150%;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.logo:hover{
+    cursor: pointer;
+    max-width: 160%;
+    max-height: 160%;
+}
+
+.box{
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 3;
+    grid-row-end: 5;
+
+    background: white;
+    border-radius: 10px;
+    opacity: 0.75;
+
+    transform: translate(100%);
+    animation: boxIn 1s ease forwards;
+}
+
+@keyframes boxIn {
+    0% {
+        transform: translate(100%);
+    }
+    100% {
+        transform: translate(0%);
+    }
+}
+
+.box:hover{
+    position: relative;
+    right: 10px;
+    transform: scale(1.04);
+    opacity: 1;
+}
+
+.p1{
+    position: relative;
+    top: 45%;
+    margin-top: 5%;
+    text-align: center;
+    transform: scale(2.25);
+    z-index: 3;
+}
+
+.p2{
+    position: relative;
+    top: -12%;
+    margin-top: 5%;
+    text-align: center;
+    transform: scale(2.25);
+    z-index: 3;
+}
+
+.p3{
+    position: relative;
+    top: -16%;
+    margin-top: 5%;
+    text-align: center;
+    transform: scale(2.25);
+    z-index: 3;
+}
+
+.p4{
+    position: relative;
+    top: -10%;
+    margin-top: 5%;
+    text-align: center;
+    transform: scale(2.25);
+    z-index: 3;
+}
+
+.box img{
+    position: relative;
+    max-width: 150%;
+    max-height: 150%;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.content-small{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row: span 4;
+
+    gap: 5px;
+    display: grid;
+    grid-template: repeat(17, 1fr) / repeat(1, 1fr);
+}
+
+.row{
+    background: white;
+    border-radius: 10px;
+    opacity: 0.75;
+    display: grid;
+    place-items: center;
+
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+}
+
+.row p{
+    position: relative;
+    text-align: center;
+    transform: scale(2.5);
+}
+
+.row p:hover{
+    transform: scale(2.55);
+}
+
+.row:hover{
+    cursor: pointer;
+    color: blue;
+    transform: scale(1.02);
+}
+
+@keyframes fadeIn {
+    0%{
+       opacity: 0;
+   }
+   100%{
+       opacity: 0.75;
+   }
+}
+
+.row:nth-child(2) {
+   animation-delay: 0.2s;
+}
+.row:nth-child(3) {
+   animation-delay: 0.3s;
+}
+.row:nth-child(4) {
+   animation-delay: 0.4s;
+}
+.row:nth-child(5) {
+   animation-delay: 0.5s;
+}
+.row:nth-child(6) {
+   animation-delay: 0.6s;
+}
+.row:nth-child(7) {
+   animation-delay: 0.7s;
+}
+.row:nth-child(8) {
+   animation-delay: 0.8s;
+}
+.row:nth-child(9) {
+   animation-delay: 0.9s;
+}
+.row:nth-child(10) {
+    animation-delay: 1s;
+}
+ .row:nth-child(11) {
+    animation-delay: 1.1s;
+}
+.row:nth-child(12) {
+    animation-delay: 1.2s;
+}
+.row:nth-child(13) {
+    animation-delay: 1.3s;
+}
+.row:nth-child(14) {
+    animation-delay: 1.4s;
+}
+.row:nth-child(15) {
+    animation-delay: 1.5s;
+}
+.row:nth-child(16) {
+    animation-delay: 1.6s;
+}
+.row:nth-child(17) {
+    animation-delay: 1.7s;
+}
