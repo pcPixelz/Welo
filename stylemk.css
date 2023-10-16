@@ -4,7 +4,7 @@
 
     font-family: 'Quicksand', sans-serif;
     font-weight: bold; ;
-    font-size: 0.45vw;
+    font-size: 0.4vw;
 
     display: grid;
     grid-template: 125px repeat(4, 1fr) / repeat(6, 1fr);
