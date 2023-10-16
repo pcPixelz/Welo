@@ -4,7 +4,7 @@
 
     font-family: 'Quicksand', sans-serif;
     font-weight: bold; ;
-    font-size: 10px;
+    font-size: 0.45vw;
 
     display: grid;
     grid-template: 125px repeat(4, 1fr) / repeat(6, 1fr);
@@ -15,8 +15,6 @@
 
 .background{
     position: absolute;
-    max-width: 111%;
-    max-height: 111%;
     z-index: -1;
 }
 
@@ -26,8 +24,8 @@
     grid-column-start: 1;
     grid-column-end: 8;
     margin-top: 10px;
-    margin-left: 40%;
-    margin-right: 40%;
+    margin-left: 10%;
+    margin-right: 10%;
     margin-bottom: 2%;
     border-radius: 10px;
 
