@@ -143,12 +143,14 @@
     margin-left: 5px;
     height: auto;
     transform: scale(1.25);
-    z-index: 3
+    z-index: 3;
+    transition: transform 500ms;
 }
 
 .mklogo:hover{
     transform: scale(1.35);
     cursor: pointer;
+    transition: transform 200ms;
 }
 
 .mkbackground{
