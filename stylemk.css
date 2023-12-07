@@ -7,13 +7,15 @@
     font-size: 0.4vw;
 
     display: grid;
-    grid-template: 125px repeat(4, 1fr) / repeat(6, 1fr);
+    grid-template: 9.5vh repeat(4, 1fr) / repeat(6, 1fr);
 
     position: relative;
     overflow: hidden;
 }
 
 .background{
+    width: 100vw;
+    height: 100vh;
     position: absolute;
     z-index: -1;
 }
@@ -143,7 +145,7 @@
 
 .p3{
     position: relative;
-    top: -16%;
+    top: -13%;
     margin-top: 5%;
     text-align: center;
     transform: scale(2.25);

@@ -1,9 +1,17 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .container{
     width: 100vw;
     height: 100vh;
 
     display: grid;
-    grid-template: 125px repeat(4, 1fr) / repeat(5, 1fr);
+    grid-template: 9.5vh repeat(4, 1fr) / repeat(5, 1fr);
+
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold; ;
+    font-size: 0.4vw;
 
     position: relative;
     overflow: hidden;
@@ -12,8 +20,8 @@
 }
 
 .background{
-    grid-column-start: 1;
-    grid-column-end: 6;
+    width: 100vw;
+    height: 100vh;
     position: absolute;
     z-index: -1;
 }
@@ -159,5 +167,47 @@
     filter: blur(1px);
     width: 130%;
     height: 130%;
+    z-index: 2;
+}
+
+.box-arrow {
+    position: absolute;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row: 5;
+
+    aspect-ratio: 0.6/0.2;
+    width: 70%;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 10%;
+    transform: translate(20%);
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+.box-arrow img{
+    position: absolute;
+    top: 80%;
+    max-width: 175%;
+    max-height: 175%;
+    transform: translate(-50%, -50%);
+}
+
+.arklogo{
+    position: absolute;
+    max-width: 150%;
+    max-height: 150%;
+    top: 68%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.arkmkbackground{
+    position: absolute;
+    filter: blur(0px);
+    width: 140%;
+    height: 140%;
     z-index: 2;
 }
