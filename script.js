@@ -45,3 +45,9 @@ var clickableArea = document.getElementById("small#8");
 clickableArea.addEventListener("click", function() {
     window.location.href = 'mk8.html';
 });
+
+var clickableArea = document.getElementById("small#9");
+
+clickableArea.addEventListener("click", function() {
+    window.location.href = 'mk9.html';
+});
